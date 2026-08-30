@@ -82,6 +82,13 @@ pip install -r requirements.txt
 
 Write-Host ""
 Write-Host "[4/4] Checking NVIDIA API configuration..."
+# -----------------------------------------
+# NVIDIA API KEY
+# -----------------------------------------
+
+$env:NVIDIA_API_KEY = "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"
+
+Write-Host "NVIDIA API configured."
 
 if (-not $env:NVIDIA_API_KEY) {
 
